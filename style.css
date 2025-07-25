@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* hauteur de l'écran */
+  margin: 0; /* enlever les marges par défaut */
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.buttons {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+     transform: scale(1.05);
+}
+
+.message {
+  font-size: 1.5rem;            /* Texte un peu plus gros pour être lisible */
+  text-align: center;           /* Centre le texte horizontalement */
+  max-width: 80%;               /* Largeur max pour éviter que le texte soit trop large */
+  min-height: 60px;             /* Hauteur minimum pour éviter que la boîte change de taille */
+}
